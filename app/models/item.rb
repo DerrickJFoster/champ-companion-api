@@ -1,3 +1,3 @@
 class Item < ApplicationRecord
-  belongs_to :champions
+  belongs_to :champion
 end
