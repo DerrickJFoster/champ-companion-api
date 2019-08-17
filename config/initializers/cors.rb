@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'https://champ-heroku-api.herokuapp.com', 'https://champ-heroku-frontend.herokuapp.com', 'localhost:3001', 'localhost:3000'
+    origins 'http://champ-heroku-api.herokuapp.com', 'http://champ-heroku-frontend.herokuapp.com', 'localhost:3001', 'localhost:3000', 'http://localhost:3000/champions', 'http://localhost:3000/items'
 
     resource '*',
       headers: :any,
